@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>comentarios Disqus</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+body{padding:0;margin:0}
+  .post-body {
+    font-size: 13px;
+    line-height: 1.2em!important;
+    padding: 0px 7px 0px 1px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+}  
+#caja-comentarios,#new-comment{
+
+width:100%;
+position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31%;
+    flex: 0 0 31%;
+    -ms-flex: 0 0 calc(33% - 10px);
+    flex: 0 0 calc(33% - 10px);
+}
+.dsq-widget ul.dsq-widget-list{padding:0!important;margin-right:0!important;text-align:left}
+img.dsq-widget-avatar{
+    margin:0 10px 7px 0!important;
+    width:48px!important;
+    height:48px!important;
+    padding:0!important;
+    float:left;
+    border-radius:100px!important;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    }
+.dsq-widget-comment p{font-size:14px;line-height:1.2em!important;color:inherit}
+.dsq-widget-comment{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+p.dsq-widget-meta{clear:both;font-size:80%;margin-top:5px!important}
+p.dsq-widget-meta a{
+  display:inline-block!important;
+  width:48%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-text-overflow:ellipsis;
+  white-space:nowrap;
+  text-decoration:none;
+      color: chocolate;
+  }
+li.dsq-widget-item{
+    margin:0 0 12px 0!important;
+        padding: 4px 4px 4px!important;
+    list-style-type:none;
+    clear:none!important;
+    display:inline;
+    float:left;
+    width:33.333333%;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    }
+a.dsq-widget-user{font-weight:bold;display:block!important;margin-bottom:5px;text-decoration:none}
+li.dsq-widget-item div:after,#new-comment p.dsq-widget-meta:after{content:'';display:block;border-bottom:1px solid #ddd;}
+li.dsq-widget-item:last-child div:after,#new-comment li.dsq-widget-item:last-child p.dsq-widget-meta:after{content:'';display:block;border-bottom:none;}
+.clear{clear:both}
+
+@media screen and (max-width:800px){li.dsq-widget-item{width:50%}
+}
+@media screen and (max-width:414px){li.dsq-widget-item{width:100%}
+}
+a.dsq-widget-user {
+    font-weight: bold;
+    color: #0088ff;
+}
+    .avatarRound {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+img.dsq-widget-avatar:hover  {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3);
+}
+
+ul.ayudadeblogger_recent_comments:hover, .card:hover {
+box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+.card {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31%;
+    flex: 0 0 31%;
+    -ms-flex: 0 0 calc(33% - 10px);
+    flex: 0 0 calc(33% - 10px);
+}
+
+.card {
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+}
+.avatar {
+    width: 120px;
+    margin: -65px auto 16px;
+  
+    border-radius: 100%;
+}
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+}
+.circle {
+    border-radius: 50%;
+}
+.testimonial-card .card-block {
+    text-align: center;
+}
+.pink {
+    background-color: #e91e63 !important;
+}
+.red {
+    background-color: #f44336 !important;
+}
+
+.purple {
+    background-color: #9c27b0 !important;
+}
+.deep_purple {
+    background-color: #673ab7 !important;
+}
+
+.indigo {
+    background-color: #3f51b5 !important;
+}
+
+.blue {
+    background-color: #2196f3 !important;
+}
+.light-blue {
+    background-color: #03a9f4 !important;
+}
+.cyan {
+    background-color: #00bcd4 !important;
+}
+.teal {
+    background-color: #009688 !important;
+}
+.green {
+    background-color: #4caf50 !important;
+}
+.deep-orange {
+    background-color: #ff5722 !important;
+}
+.brown {
+    background-color: #795548 !important;
+}
+.grey {
+    background-color: #9e9e9e !important;
+}
+.grey-darken-2 {
+    background-color: #616161 !important;
+}
+.grey-darken-4 {
+    background-color: #212121 !important;
+}
+.black {
+    background-color: #000000 !important;
+}
+.yellow-accent-2 {
+    background-color: #ffff00 !important;
+}
+    
+</style>
+<script>
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=');
+      if (pair[0] == variable) {
+        return pair[1];
+      }
+    }
+    return (false);
+  }
+  </script>
+</head>
+<body>
+<div class='post-body' id="disqus_thread">
+<div id="new-comment" class="dsq-widget card testimonial-card">
+<div class="card-up pink">
+</div>
+
+<!--Avatar-->
+<div class="avatar"><img src="https://1.bp.blogspot.com/-X_MQHvWUWcw/WERt1nSVEzI/AAAAAAAANbA/WSP9YaTVyjEvuoaa-cVIeu0bPt24BCDvQCLcB/s1600/luis-chavez.png" class="circle responsive-img" />
+    </div>    
+    
+    
+<script>
+document.write("<scr" + "ipt type=\"text/javascript\" src=\"https://" + getQueryVariable('shortname') + ".disqus.com/recent_comments_widget.js?num_items=22&hide_mods=1&hide_avatars=0&avatar_size=32&excerpt_length=80\"></scr" + "ipt>")
+</script>
+<div class="clear"></div>
+</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type='text/javascript'>
+//<![CDATA[
+$("#caja-comentarios a,#new-comment a").filter(function(){return this.hostname&&this.hostname!==location.hostname}).attr('rel', 'nofollow').attr('target', '_blank');
+//]]>
+</script>
+<script>
+  function generateCss(q) {
+    var css       = document.createElement('style'),
+        sp2       = document.getElementById('disqus_thread'),
+        parentDiv = sp2.parentNode;
+    css.type = 'text/css';
+    if (css.styleSheet) css.styleSheet.cssText = q;
+    else css.appendChild(document.createTextNode(q));
+    parentDiv.insertBefore(css, sp2);
+  }
+    (function() {
+    var q = '#disqus_thread {color:#' + getQueryVariable('fontBodyColor') + '; font-family:' + getQueryVariable('fontBodyFamily') + '} a:link, a:visited {color:#' + getQueryVariable('fontLinkColor') + ';text-decoration:none;} a:link:hover,a:visited:hover{color:#' + getQueryVariable('linkHoverColor') + '}';
+        generateCss(q);
+  })();
+  </script>
+</body>
+</html>
